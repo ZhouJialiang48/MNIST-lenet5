@@ -63,7 +63,7 @@ def backward(mnist):
 
 
 def main():
-    mnist = input_data.read_data_sets('~/tf/data/', one_hot=True)
+    mnist = input_data.read_data_sets(DATA_DIR, one_hot=True)
     backward(mnist)
 
 

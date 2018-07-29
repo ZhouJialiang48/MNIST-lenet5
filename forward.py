@@ -25,7 +25,6 @@ def forward(x, train, regularizer=None):
 
     pool_shape = pool2.get_shape().as_list()
     nodes = pool_shape[1] * pool_shape[2] * pool_shape[3]
-    print(type(pool2), nodes, pool_shape)
     reshaped = tf.reshape(pool2, [pool_shape[0], nodes])
 
     fc1_w = get_weight(shape=[nodes, FC_SIZE], regularizer=regularizer)

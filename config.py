@@ -6,6 +6,8 @@
 # @File    : config.py
 # @Software: PyCharm
 
+DATA_DIR = '~/tf/data/'
+
 # forward.py
 IMAGE_SIZE = 28
 NUM_CHANNELS = 1
